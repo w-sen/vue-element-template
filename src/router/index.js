@@ -34,6 +34,7 @@ export const constantRoutes = [
   {
     path: '/user',
     component: Layout,
+    hidden: true,
     children: [{
       path: 'index',
       name: 'UserManage',
@@ -56,6 +57,7 @@ export const constantRoutes = [
   {
     path: '/strategy',
     component: Layout,
+    hidden: true,
     children: [{
       path: 'index',
       name: 'Strategy',
@@ -75,13 +77,13 @@ export const constantRoutes = [
         path: 'browse',
         name: 'Browse',
         component: () => import('@/views/browse/index'),
-        meta: { title: '销售线索浏览行为', icon: 'table' }
+        meta: { title: '浏览行为', icon: 'table' }
       },
       {
         path: 'trading',
         name: 'Trading',
         component: () => import('@/views/trading/index'),
-        meta: { title: '销售线索交易行为', icon: 'tree' }
+        meta: { title: '交易行为', icon: 'tree' }
       }
     ]
   },

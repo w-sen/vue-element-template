@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <div class="export"><el-button type="primary">导出数据</el-button></div>
     <el-table
       v-loading="listLoading"
       :data="list"
@@ -77,3 +78,9 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+  .export{
+    text-align: right;
+    margin-bottom: 20px;
+  }
+</style>
