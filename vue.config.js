@@ -36,6 +36,11 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    // proxy: {
+    //   '/apis/v1': {
+    //     target: `http://192.168.50.178`
+    //   }
+    // },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {
